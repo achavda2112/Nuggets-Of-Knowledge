@@ -44,12 +44,8 @@ public class ExtentDemo extends webDriverSetup {
     }
 
     public static void endReport() {
-        report.endTest(test);
         report.flush();
-        WebDriver driver = getDriver();
-        if (driver != null) {
-            driver.quit();
-        }
+      
     }
 
     private static String captureScreenshotAsBase64() {

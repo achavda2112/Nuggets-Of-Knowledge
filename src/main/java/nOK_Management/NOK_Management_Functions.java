@@ -1,7 +1,6 @@
 package nOK_Management;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -1054,6 +1053,7 @@ public class NOK_Management_Functions extends webDriverSetup {
 					.getText();
 			ExtentDemo.logStatusWithScreenshot(LogStatus.INFO, "Fetch Title of Nugget.");
 
+			
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(NOK_Management_Locators.ThreeDots)))
 					.isDisplayed();
 			Thread.sleep(2000);
